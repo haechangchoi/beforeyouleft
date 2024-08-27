@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "대중교통 알림",
+  "version": "1.0",
+  "description": "주변 버스 정류장 및 지하철역에 대한 알림을 제공합니다.",
+  "icons": {
+      "128": "icon.png"
+  },
+  "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+          "128": "icon.png"
+      }
+  },
+  "permissions": ["geolocation", "notifications", "alarms"],
+  "background": {
+      "service_worker": "background.js"
+  }
+}
